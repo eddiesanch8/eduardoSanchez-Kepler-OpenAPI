@@ -1,0 +1,13 @@
+body {
+  background-color: brown;
+}
+
+.container {
+  background-color: aqua;
+  font-size: 1rem;
+}
+
+.greeting {
+  color: salmon;
+  font-size: 3rem;
+}
