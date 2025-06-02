@@ -4,18 +4,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>World of Marvel</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <!-- End of MetaData -->
 
   <body>
     <div class="container">
-      <div class="Greeting">
-        <h1><em>Hello world</em></h1>
-        <h2>What in the world? Here is some stuff:</h2>
-      </div>
 
+
+          <nav class="nav_headers">
+            <a class="nav_header" href="-">Spider-Man</a>
+            <a class="nav_header" href="-">Storm</a>
+            <a class="nav_header" href="-">Wolverine</a>
+          </nav>
+
+
+          <!-- End of Nav header-->
+    
+        <!-- Create a Nav here. Make sure media query is up to date. 
+         
+        Nav headers should be: 
+        1. SpiderMan 2. Black Panther  3. Dr. Strange 
+        -->
+  <div class="nav">
+
+
+<div class="intro">
+      <h1><em>Top 3 Marvel Superheros:</em></h1>
+      <p> Marvel is full of super-powered meta humans. Here are the top 3 according to, me.</p>
+</div>
+
+
+<div class="threeSpread">
+<section id="topHeroes">
+  <ul>
+    <!-- A list of top three
+  Will populate here from the api. It will include: Name, #, Cover of a comic they are from
+
+  Important: 
+  1. Due to attribution, it will also include an external URL to Marvel's webpage for this character. So:
+
+  Links from URL arrays
+Most entities return URL arrays, which are one or more public URLs associated with an entity. For example, a comic may have a URL array that contains a link to its detail page on Marvel.com, a link to purchase it on the web, and a link to the Marvel digital comics reader for that comic.
+
+If a URL array is present for an entity, please use one of the links provided when linking back to Marvel. Feel free to use any of the URLs present, whichever makes most sense for your application. (URL block links are automatically tagged with your API key so that we can properly credit your web site or application with any traffic driven from your link.)
+
+Linking back when no URL array is present
+If a URL array is not present for an entity simply link to the Marvel.com home page (http://marvel.com) in your attribution notice.
+
+
+
+  Here is the list: 
+  1. Spiderman 
+  2. Black Panther
+  3. Dr. Strange   
+
+  Using Flexbox, these 3 will take up a majority of the screen. When a user clicks within the area of the commic, they are redirected to a more in depth bio. 
+  This will include: 
+  1. API fetch on powers, origin, and # of issues. 
+  2. In HTML, it will provide a brief description written by me. 
+
+
+
+
+  
+  Our nav bar will also be able to link to their unique page. 
+
+  -->
+    
+  <ul>
+
+</section>
+
+
+</div>
       <div>
         <section id="projects">
           <ul></ul>
