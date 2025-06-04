@@ -6,87 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World of Marvel</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Comic Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Pixel Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Jersey+20&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <!-- End of MetaData -->
 
   <body>
     <div class="container">
+      <div class="title">
+        <h1>Top 3 Marvel Superheros:</h1>
+      </div>
 
+      <section class="intro">
+        <p>
+          Marvel is full of super-powered meta humans. From wall-crawlers to
+          genius billionaire playboy philanthropists, there are lots of heroes
+          to choose and learn from. These are my choice for the top 3 characters
+          in the Marvel Universe with alongside some comic book art provided to
+          us through marvel. Click the buttons below to learn more about them
+          and visit Marvel's website to learn more about them.
+        </p>
+      </section>
 
-          <nav class="nav_headers">
-            <a class="nav_header" href="-">Spider-Man</a>
-            <a class="nav_header" href="-">Storm</a>
-            <a class="nav_header" href="-">Wolverine</a>
-          </nav>
-
-
-          <!-- End of Nav header-->
-    
-        <!-- Create a Nav here. Make sure media query is up to date. 
-         
-        Nav headers should be: 
-        1. SpiderMan 2. Black Panther  3. Dr. Strange 
-        -->
-  <div class="nav">
-
-
-<div class="intro">
-      <h1><em>Top 3 Marvel Superheros:</em></h1>
-      <p> Marvel is full of super-powered meta humans. Here are the top 3 according to, me.</p>
-</div>
-
-
-<div class="threeSpread">
-<section id="topHeroes">
-  <ul>
-    <!-- A list of top three
-  Will populate here from the api. It will include: Name, #, Cover of a comic they are from
-
-  Important: 
-  1. Due to attribution, it will also include an external URL to Marvel's webpage for this character. So:
-
-  Links from URL arrays
-Most entities return URL arrays, which are one or more public URLs associated with an entity. For example, a comic may have a URL array that contains a link to its detail page on Marvel.com, a link to purchase it on the web, and a link to the Marvel digital comics reader for that comic.
-
-If a URL array is present for an entity, please use one of the links provided when linking back to Marvel. Feel free to use any of the URLs present, whichever makes most sense for your application. (URL block links are automatically tagged with your API key so that we can properly credit your web site or application with any traffic driven from your link.)
-
-Linking back when no URL array is present
-If a URL array is not present for an entity simply link to the Marvel.com home page (http://marvel.com) in your attribution notice.
-
-
-
-  Here is the list: 
-  1. Spiderman 
-  2. Black Panther
-  3. Dr. Strange   
-
-  Using Flexbox, these 3 will take up a majority of the screen. When a user clicks within the area of the commic, they are redirected to a more in depth bio. 
-  This will include: 
-  1. API fetch on powers, origin, and # of issues. 
-  2. In HTML, it will provide a brief description written by me. 
-
-
-
-
-  
-  Our nav bar will also be able to link to their unique page. 
-
-  -->
-    
-  <ul>
-
-</section>
-
-
-</div>
-      <div>
-        <section id="projects">
+      <div class="heroSpread">
+        <section class="hero" id="topHeroes">
           <ul></ul>
+
+          <!-- button appends here -->
         </section>
       </div>
+
+      <!-- end of top heroes  -->
+
+      <section id="heroBio">
+        <!-- Bio goes here -->
+      </section>
+
+      <footer></footer>
     </div>
     <!-- End of Container -->
-    <footer></footer>
 
     <script src="dist/bundle.js"></script>
 
