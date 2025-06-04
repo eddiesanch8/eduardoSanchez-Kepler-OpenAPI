@@ -1,42 +1,161 @@
 body {
-  margin: 0;
-  background-color: #ffffff;
+  background-color: aqua;
   font-family: Arial, sans-serif;
-  font-size: 1.25rem;
 }
 
-a,
-a:hover,
-a:active {
-  color: inherit;
-  text-decoration: none;
+.title {
+  font-family: "Bangers", system-ui;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: normal;
 }
-
-a:visited {
-  color: #ffffff;
-  text-decoration: none;
+.marvelCopyright {
+  text-align: center;
+  font-size: 1rem;
 }
 
 .container {
   background-color: aqua;
   font-size: 1rem;
+  margin: 0;
+  padding: 1em 1em;
 }
 
-/* Styling for Nav */
-.nav_headers {
-  display: flex;
-  justify-content: space-evenly;
-  top: 0;
-  padding: 0.5em;
+/* Intro */
+
+.intro {
   font-size: 1rem;
-  font-weight: bold;
-  color: #ff0000;
-  background-color: #000000;
+  text-align: center;
 }
 
-.nav_header {
+/* Character Comic covers fetched with API */
+
+#topHeroes ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+#topHeroes li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  max-width: 200px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5%;
+  box-shadow: 0 0.5rem 1.5rem #7c7979;
+}
+
+#topHeroes li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.75rem 1.5rem #7c7979;
+}
+
+#topHeroes img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2.5%;
+}
+
+/* Bio styling */
+
+#heroBio section {
+  animation: fadeIn 0.7s ease-in-out;
+  font-family: "Jersey 20", sans-serif;
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1em 1.5em;
+  background-color: #c8363bba;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1.5rem #7c7979;
+}
+
+#heroBio img {
+  width: 100%;
+  max-height: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0rem 0.5rem 0.5rem #ffffffa6;
+}
+
+#heroBio p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#heroBio a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #00406e;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Buttons for fetching Bios for corresponding characters */
+.bioButton {
   margin: 0.5em;
-  padding: 0.2em 0.5em;
-  font-size: 2rem;
-  font-weight: 600;
+  padding: 0.2em 0.2em;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton {
+  margin: 0.5em;
+  padding: 0.2em 0.2em;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: #ff9090;
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 0.75rem #7c7979;
+}
+
+/* Tablet Media Query  */
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #topHeroes ul {
+    flex-wrap: nowrap;
+  }
+}
+
+/* phone media query */
+@media screen and (max-width: 599px) {
+  #topHeroes ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animations!! */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
